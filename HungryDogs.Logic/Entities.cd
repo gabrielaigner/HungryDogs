@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HungryDogs.Logic.Entities.Persistence.Restaurant" BaseTypeListCollapsed="true">
+    <Position X="1" Y="0.75" Width="1.5" />
+    <AssociationLine Name="OpeningHours" Type="HungryDogs.Logic.Entities.Persistence.OpeningHour" FixedFromPoint="true">
+      <Path>
+        <Point X="2.5" Y="1.25" />
+        <Point X="5.25" Y="1.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAASAAAAAAAAAQAAQAAgAAAAAAIAAABAAAAAA=</HashCode>
+      <FileName>Entities\Persistence\Restaurant.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="OpeningHours" />
+      <Property Name="SepcialOpeningHours" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HungryDogs.Logic.Entities.Persistence.OpeningHour" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="0.75" Width="1.5" />
+    <AssociationLine Name="Restaurant" Type="HungryDogs.Logic.Entities.Persistence.Restaurant" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="1.812" />
+        <Point X="2.5" Y="1.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IAAgAAAAAAAAAgAAAAAAAAAAAAAAABAAAAAEAAIAAAA=</HashCode>
+      <FileName>Entities\Persistence\OpeningHour.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Restaurant" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HungryDogs.Logic.Entities.Persistence.SpecialOpeningHour" BaseTypeListCollapsed="true">
+    <Position X="3" Y="4.5" Width="2.25" />
+    <AssociationLine Name="Restaurant" Type="HungryDogs.Logic.Entities.Persistence.Restaurant" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.094" Y="4.5" />
+        <Point X="4.094" Y="2.5" />
+        <Point X="2.5" Y="2.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IgAgAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAEBAAAAAA=</HashCode>
+      <FileName>Entities\Persistence\SpecialOpeningHour.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Restaurant" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
